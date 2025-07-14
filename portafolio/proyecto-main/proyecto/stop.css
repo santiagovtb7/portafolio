@@ -1,0 +1,126 @@
+body {
+            background-image: url(https://tse4.mm.bing.net/th/id/OIP.ZNzPC21aG-2m49uqwrE0GQHaEZ?pid=Api&P=0&h=180);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Opcional */
+            margin: 0;
+            padding: 0;
+            /* height: 100vh; */ /* Descomenta si quieres asegurar la altura */
+     }
+
+
+img {
+width: 200px;
+height: auto;
+margin-top: 20px;
+background-color: #ffffff;
+}
+
+h2 {
+font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.cabecera {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.navegacion {
+    background-color: #333;
+}
+
+.navegacion ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navegacion ul li {
+    display: inline;
+}
+
+.navegacion ul li a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navegacion ul li a:hover {
+    background-color: #111;
+}
+
+.principal {
+    float: left;
+    width: 70%;
+    padding: 20px;
+}
+
+.anuncios {
+    float: right;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.anuncio {
+    background-color: #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.flotante {
+    clear: both;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para el iframe */
+iframe {
+    width: 100%;
+    height: 300px; /* Ajusta la altura según lo necesites */
+    border: none; /* Sin borde */
+}
+
+/* Estilos para los botones */
+.botones {
+    margin-top: 20px; /* Espacio superior para los botones */
+}
+
+.btn {
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.btn-primario {
+   background-color: #66ff00; /* Color verde */
+   color: white; /* Texto blanco */
+}
+
+.btn-secundario {
+   background-color: #66ff00; /* Color verde */
+   color: white; /* Texto blanco */
+}
+
+.btn-terciario {
+   background-color: #66ff00; /* Color verde */
+   color: white; /* Texto blanco */
+}
+
+.btn-cuarto {
+   background-color: #66ff00; /* Color verde */
+   color: white; /* Texto blanco */
+   }
+
+/* Efecto hover para los botones */
+.btn:hover {
+   opacity: 0.8; /* Ligera transparencia al pasar el mouse */
+}
+
