@@ -2,48 +2,60 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Sitio Web Avanzado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Santiago Vallest</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Mi Sitio Web</h1>
+    <h1>Santiago Vallest</h1>
     <nav>
       <ul>
-        <li><a href="#" onclick="mostrarSeccion('home')">Home</a></li>
-        <li><a href="#" onclick="mostrarSeccion('info')">Información</a></li>
-        <li><a href="#" onclick="mostrarSeccion('estadistica')">Estadística</a></li>
-        <li><a href="#" onclick="mostrarSeccion('contacto')">Formulario de Contacto</a></li>
+        <li><a href="#" onclick="mostrarSeccion('home')">Inicio</a></li>
+        <li><a href="#" onclick="mostrarSeccion('info')">Sobre Mí</a></li>
+        <li><a href="#" onclick="mostrarSeccion('habilidades')">Habilidades</a></li>
+        <li><a href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
   <section id="home" class="seccion visible">
-    <h2>Noticias</h2>
+    <h2>Bienvenido a mi Portafolio</h2>
     <article>
-      <h3>Titular Principal</h3>
-      <p>Texto introductorio como en un periódico. Aquí va contenido destacado.</p>
+      <h3>Santiago Vallest, Desarrollador Web</h3>
+      <p>Soy un apasionado desarrollador web con experiencia en Python, Flask y tecnologías frontend como HTML, CSS y JavaScript. Me especializo en crear aplicaciones web funcionales y atractivas.</p>
     </article>
     <div class="carrusel">
-      <img id="imagenCarrusel" src="img1.jpg" alt="Carrusel">
+      <img id="imagenCarrusel" src="https://via.placeholder.com/600x300.png?text=Proyecto+1" alt="Carrusel de Proyectos">
+      <button onclick="cambiarImagen(-1)">◄</button>
+      <button onclick="cambiarImagen(1)">►</button>
     </div>
   </section>
 
   <section id="info" class="seccion">
-    <h2>Información</h2>
-    <div class="grid-noticias">
-      <article><h3>Nota 1</h3><p>Contenido de tipo periódico.</p></article>
-      <article><h3>Nota 2</h3><p>Otra columna como en un periódico.</p></article>
-      <article><h3>Nota 3</h3><p>Más información distribuida visualmente.</p></article>
+    <h2>Sobre Mí</h2>
+    <div class="grid-info">
+      <article>
+        <h3>Educación</h3>
+        <p>Ingeniería en Sistemas Computacionales, Universidad XYZ (2018-2022).</p>
+      </article>
+      <article>
+        <h3>Experiencia</h3>
+        <p>Desarrollador Web Junior en Empresa ABC, creando aplicaciones con Flask y Django (2022-2023).</p>
+      </article>
+      <article>
+        <h3>Proyectos</h3>
+        <p>Desarrollo de una aplicación web de gestión de tareas con Flask y MySQL.</p>
+      </article>
     </div>
   </section>
 
-  <section id="estadistica" class="seccion">
-    <h2>Estadísticas Dinámicas</h2>
+  <section id="habilidades" class="seccion">
+    <h2>Mis Habilidades</h2>
     <label for="filtro">Selecciona una categoría:</label>
     <select id="filtro" onchange="actualizarGrafico()">
-      <option value="ventas">Ventas</option>
-      <option value="usuarios">Usuarios</option>
+      <option value="frontend">Frontend</option>
+      <option value="backend">Backend</option>
     </select>
     <div class="grafico-container">
       <canvas id="grafico" width="400" height="200"></canvas>
@@ -51,7 +63,7 @@
   </section>
 
   <section id="contacto" class="seccion">
-    <h2>Formulario de Contacto</h2>
+    <h2>Contáctame</h2>
     <form id="formContacto" onsubmit="return enviarFormulario()">
       <input type="text" id="nombre" placeholder="Nombre" required>
       <input type="email" id="email" placeholder="Email" required>
@@ -63,9 +75,9 @@
 
   <footer>
     <p>Redes Sociales:
-      <a href="https://www.youtube.com" target="_blank">YouTube</a> |
-      <a href="https://www.instagram.com" target="_blank">Instagram</a> |
-      <a href="https://www.twitter.com" target="_blank">X</a>
+      <a href="https://www.linkedin.com/in/santiagovallest" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/SantiagoVallest7" target="_blank">GitHub</a> |
+      <a href="https://www.twitter.com/SantiagoVallest7" target="_blank">X</a>
     </p>
   </footer>
 
