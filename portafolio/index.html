@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio de Santiago Valles Taborda</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1> Santiago Valles Taborda </h1>
+      <p>Estudiante de Ingeniería Informática</p>
+      <nav>
+        <a href="#about">Sobre Mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <img src="perfil.jpg" alt="Foto de Alex Romero" class="profile-img" />
+      <div>
+        <h2>¡Hola! Soy Santiago</h2>
+        <p>
+          Apasionado por la tecnología, el desarrollo web y la inteligencia artificial. Me gusta resolver problemas del mundo real con soluciones innovadoras. Fuera del código, me encanta jugar fútbol y aprender constantemente.
+        </p>
+        <a href="#projects" class="btn">Ver Proyectos</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>Sobre Mí</h2>
+    <p>
+      Soy estudiante de Ingeniería Informática con interés en el desarrollo web,
+      automatización de procesos y machine learning. He trabajado en proyectos individuales y colaborativos,
+      donde aplico mis conocimientos en tecnologías modernas como JavaScript, Python, React y Firebase.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Mis Proyectos</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>TaskMaster</h3>
+        <p>Gestión de tareas personales con autenticación y colaboración.</p>
+        <button onclick="showProjectDetails(1)">Ver Más</button>
+        <div class="project-details" id="project-details-1">
+          <p>React, Firebase, Material UI</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Blog Fútbol 360</h3>
+        <p>Blog de noticias deportivas con sistema de usuarios y comentarios.</p>
+        <button onclick="showProjectDetails(2)">Ver Más</button>
+        <div class="project-details" id="project-details-2">
+          <p>PHP, MySQL, HTML/CSS, JavaScript</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Calculadora IMC</h3>
+        <p>Calculadora con sugerencias saludables y diseño responsivo.</p>
+        <button onclick="showProjectDetails(3)">Ver Más</button>
+        <div class="project-details" id="project-details-3">
+          <p>JavaScript, Bootstrap</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Habilidades</h2>
+    <canvas id="skillsChart" width="300" height="300"></canvas>
+    <div class="skills-list">
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">Python</span>
+      <span class="skill">Firebase</span>
+      <span class="skill">React</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Nombre" required />
+      <span id="name-error" class="error-message"></span>
+
+      <input type="email" id="email" placeholder="Correo Electrónico" required />
+      <span id="email-error" class="error-message"></span>
+
+      <textarea id="message" placeholder="Mensaje" rows="5" required></textarea>
+      <span id="message-error" class="error-message"></span>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Santiago Valles Taborda. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
